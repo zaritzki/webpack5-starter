@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #000;
+$secondary-color: #f4f4f4;
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+$body-color: #0cbaba;
+$body-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+$box-color: #f9fcff;
+$box-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+
+$btn-color: #7f5a83;
+$btn-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $body-color;
+	background-image: $body-image;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	padding: 20px;
+}
+
+.container {
+	background-color: $box-color;
+	background-image: $box-image;
+	border-radius: 10px;
+	box-shadow: $box-shadow;
+	padding: 50px 20px;
+	text-align: center;
+	max-width: 100%;
+	width: 800px;
+}
+
+h3 {
+	margin: 0;
+	opacity: 0.5;
+	letter-spacing: 2px;
+}
+
+img {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.joke {
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 1px;
+	line-height: 40px;
+	margin: 50px auto;
+	max-width: 600px;
+}
+
+.btn {
+	background-color: $btn-color;
+	background-image: $btn-image;
+	color: $secondary-color;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+	padding: 14px 40px;
+	font-size: 16px;
+	cursor: pointer;
+
+	&:active {
+		transform: scale(0.98);
+	}
+
+	&:focus {
+		outline: 0;
+	}
+}
